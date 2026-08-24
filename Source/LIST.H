@@ -45,14 +45,14 @@
 template <class T>
 class dtList{
 	private:
-		template <class T>
+		template <class U>
 			class dtNode{
 				public:
-					T* data;
+					U* data;
 					dtNode():data(0), Next(0), Prev(0){};
-					dtNode(T* n):data(n), Next(0), Prev(0){};
-					dtNode<T>* Next;
-					dtNode<T>* Prev;
+					dtNode(U* n):data(n), Next(0), Prev(0){};
+					dtNode<U>* Next;
+					dtNode<U>* Prev;
 			};
 	protected:
 		dtNode<T>* Head;

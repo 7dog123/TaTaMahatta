@@ -1,5 +1,5 @@
-//#include "timer.h"
-#include "timer_i.h"
+//#include "TIMER.H"
+#include "TIMER_I.H"
 
 LARGE_INTEGER g_freq;		//used by QueryPerformanceFrequency
 

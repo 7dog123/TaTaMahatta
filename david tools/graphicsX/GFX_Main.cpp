@@ -1,7 +1,7 @@
-#include "gdix.h"
-#include "gdix_i.h"
+#include "gdiX.h"
+#include "GDIX_I.H"
 
-#include "gdix_screen.h"
+#include "gdiX_screen.h"
 
 #pragma comment(lib,"d3d9.lib") //no linking needed
 #pragma comment(lib,"d3dx9.lib")

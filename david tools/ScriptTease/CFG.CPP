@@ -1,7 +1,7 @@
-#include "cfg.h"
-#include "cfg_i.h"
+#include "CFG.H"
+#include "CFG_I.H"
 
-#include "script_i.h"
+#include "SCRIPT_I.H"
 
 PRIVATE bool _CfgIsSection(char *buff)
 {

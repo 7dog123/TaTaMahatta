@@ -1,7 +1,7 @@
 #ifndef _gdix_scanline_h
 #define _gdix_scanline_h
 
-#include "gdix.h"
+#include "gdiX.h"
 
 // The data structure for the edge node used in both Edge Table and
 // Active Edge table. It contains edge vertex information as well as

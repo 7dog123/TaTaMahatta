@@ -2,7 +2,7 @@
 
 #include "tata_basic.h"
 
-#include "resource.h"
+#include "RESOURCE.H"
 
 //#define FRAME_LIMIT
 #define FRAME_LIMIT_DELAY	60

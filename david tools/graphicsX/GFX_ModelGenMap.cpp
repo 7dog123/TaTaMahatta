@@ -1,5 +1,5 @@
-#include "gdix.h"
-#include "gdix_i.h"
+#include "gdiX.h"
+#include "GDIX_I.H"
 #include "gdiX_mesh_i.h"
 
 #define HEIGHTITER		.5f

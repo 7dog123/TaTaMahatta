@@ -12,7 +12,7 @@
 
 #define COW_SND_FILENAME	"logo_scene\\cows.mp3"
 
-hTXT				g_bkImg[NUM_BK_IMG]={0};
+static hTXT				g_bkImg[NUM_BK_IMG]={0};
 hTXT				g_renegadeImg=0;
 hTXT				g_ddProdImg=0;
 

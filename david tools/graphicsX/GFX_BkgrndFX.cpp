@@ -1,5 +1,5 @@
-#include "gdix_bkgrndfx.h"
-#include "gdix_i.h"
+#include "gdiX_bkgrndFX.h"
+#include "GDIX_I.H"
 
 #define MAX_ALPHA	255
 

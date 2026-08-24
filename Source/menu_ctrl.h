@@ -1,6 +1,6 @@
 #ifdef MENU_ENABLE
 
-#include "list.h"
+#include "LIST.H"
 
 #define MAX_TIMI_SCREEN 20 // max amount of menu objects on screen
 #define MAX_LOOP_SCREEN 5

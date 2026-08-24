@@ -1,7 +1,7 @@
 #ifndef _gdix_qbsp_h
 #define _gdix_qbsp_h
 
-#include "gdix_qbsp_flags.h"
+#include "gdiX_qbsp_flags.h"
 
 //THIS IS FOR INTERNAL GFX USE ONLY!
 

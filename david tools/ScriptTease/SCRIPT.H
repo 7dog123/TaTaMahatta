@@ -1,7 +1,7 @@
 #ifndef _script_h
 #define _script_h
 
-#include "..\common.h"
+#include "../COMMON.H"
 
 //defines
 #define MAXCHARNAME		50		//maximum character for variable/function name

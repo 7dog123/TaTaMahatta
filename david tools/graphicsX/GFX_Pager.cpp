@@ -1,5 +1,5 @@
-#include "gdix.h"
-#include "gdix_i.h"
+#include "gdiX.h"
+#include "GDIX_I.H"
 
 //page stuff
 #define	NUMPP			32			//number of obj per page

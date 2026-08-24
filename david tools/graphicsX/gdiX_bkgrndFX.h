@@ -1,7 +1,7 @@
 #ifndef _gdix_bkgrndfx_h
 #define _gdix_bkgrndfx_h
 
-#include "gdix.h"
+#include "gdiX.h"
 
 typedef struct _gfxBkFX		*hBKFX;	//handle to background FX
 

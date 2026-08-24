@@ -1,4 +1,4 @@
-#include "mywin.h"
+#include "MYWIN.H"
 
 RECT G_clientarea;
 char G_filepath[MAXCHARBUFF];

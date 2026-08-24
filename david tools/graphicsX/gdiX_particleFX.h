@@ -1,7 +1,7 @@
 #ifndef _gdix_particlefx_h
 #define _gdix_particlefx_h
 
-#include "gdix.h"
+#include "gdiX.h"
 
 typedef struct _gfxParticleFX *hPARFX;
 

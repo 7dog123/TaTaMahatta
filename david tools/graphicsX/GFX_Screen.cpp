@@ -1,5 +1,5 @@
-#include "gdix.h"
-#include "gdix_i.h"
+#include "gdiX.h"
+#include "GDIX_I.H"
 
 #define SCRN_TXT_W	256
 #define SCRN_TXT_H	256

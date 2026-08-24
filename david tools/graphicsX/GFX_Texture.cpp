@@ -1,5 +1,5 @@
-#include "gdix.h"
-#include "gdix_i.h"
+#include "gdiX.h"
+#include "GDIX_I.H"
 
 PRIVATE void _destroyTxt(hTXT *txt) //this will destroy the object, will not search list
 {

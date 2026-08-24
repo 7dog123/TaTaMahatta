@@ -16,3 +16,5 @@
 /david tools/TIMER/Release
 *.user
 *.old
+# MinGW32 build
+/build/

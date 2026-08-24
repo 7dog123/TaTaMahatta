@@ -1,12 +1,12 @@
 #ifndef _gdix_h
 #define _gdix_h
 
-#include "..\common.h"
+#include "../COMMON.H"
 
 #include "d3d9types.h"
 #include "d3dx9math.h"
 
-#include "d3dstuff\D3DFont.h"
+#include "D3DSTUFF/D3DFONT.H"
 
 #ifdef _DEBUG
 extern int g_numCulled;

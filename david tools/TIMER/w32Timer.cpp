@@ -1,4 +1,4 @@
-#include "timer.h"
+#include "TIMER.H"
 
 #pragma warning( disable : 4201 )
 #include <mmsystem.h>

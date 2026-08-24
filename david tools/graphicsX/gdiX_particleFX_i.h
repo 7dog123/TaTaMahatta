@@ -1,7 +1,7 @@
 #ifndef _gdix_particlefx_i_h
 #define _gdix_particlefx_i_h
 
-#include "gdix_particlefx.h"
+#include "gdiX_particleFX.h"
 
 #define PARFX_UPDATE_DEAD	1
 

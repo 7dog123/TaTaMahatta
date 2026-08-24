@@ -6,13 +6,13 @@
 // Copyright (c) 1997-2001 Microsoft Corporation. All rights reserved
 //-----------------------------------------------------------------------------
 #define STRICT
-#include <Windows.h>
-#include <WindowsX.h>
+#include <windows.h>
+#include <windowsx.h>
 #include <tchar.h>
 #include <stdio.h>
-#include "D3DUtil.h"
-#include "DXUtil.h"
-#include "D3DX9.h"
+#include "D3DUTIL.H"
+#include "DXUTIL.H"
+#include "d3dx9.h"
 
 
 

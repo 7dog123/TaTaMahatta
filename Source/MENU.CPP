@@ -1,6 +1,6 @@
-#include "common.h"
+#include "COMMON.H"
 
-#include "menu.h"
+#include "MENU.H"
 
 #ifdef MENU_ENABLE
 

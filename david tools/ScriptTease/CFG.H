@@ -3,7 +3,7 @@
 
 //The Config File Loader/Saver
 
-#include "..\common.h"
+#include "../COMMON.H"
 
 typedef struct _Cfg	*hCFG;
 

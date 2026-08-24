@@ -12,7 +12,7 @@
 #include <tchar.h>
 #include <stdio.h> 
 #include <stdarg.h>
-#include "DXUtil.h"
+#include "DXUTIL.H"
 
 
 

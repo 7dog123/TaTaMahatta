@@ -1,24 +1,24 @@
 #ifndef _gdix_i_h
 #define _gdix_i_h
 
-#include "gdix.h"
-#include "gdix_types.h"
+#include "gdiX.h"
+#include "gdiX_types.h"
 //#include "GFX_Bounds.h"
 
-//#include "..\Memory\memory.h"
+//#include "../Memory/MEMORY.H"
 #define GFX_MALLOC(s) calloc(1, (s))//malloc((s))
 #define GFX_FREE(data) free((data))
 
-#include "..\Parser\parser.h"
-#include "..\Timer\timer.h"
+#include "../Parser/PARSER.H"
+#include "../TIMER/TIMER.H"
 
 #include "d3d9.h"
-#include "D3dx9tex.h"
+#include "d3dx9tex.h"
 #include "d3dx9mesh.h"
 #include "d3dx9core.h"
 
 //#include <mmsystem.h>	//for the sake of that damn dxutil
-//#include "dxutil.h"		//might as well use it...
+//#include "DXUTIL.H"		//might as well use it...
 
 #define INTERPOLATEANIM
 

@@ -7,8 +7,11 @@
 //-----------------------------------------------------------------------------
 #ifndef D3DUTIL_H
 #define D3DUTIL_H
-#include <D3D9.h>
-#include <D3DX9Math.h>
+#include <d3d9.h>
+#include <d3dx9math.h>
+
+// MinGW-w64 (wine d3dx9 headers) does not provide the MSVC-aligned matrix type.
+typedef D3DXMATRIX D3DXMATRIXA16;
 
 
 

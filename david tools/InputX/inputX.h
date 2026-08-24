@@ -1,11 +1,11 @@
 #ifndef _inputX_h
 #define _inputX_h
 
-#include <InitGuid.h>
+#include <initguid.h>
 
 #define DIRECTINPUT_VERSION 0x0800
 
-#include "..\common.h"
+#include "../COMMON.H"
 
 #include "dinput.h"
 

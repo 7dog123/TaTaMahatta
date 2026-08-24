@@ -1,8 +1,8 @@
-#include "gdix_particlefx.h"
+#include "gdiX_particleFX.h"
 
-#include "gdix_i.h"
+#include "GDIX_I.H"
 
-#include "gdix_particlefx_i.h"
+#include "gdiX_particleFX_i.h"
 
 PRIVATE void _fxGatherAppend(fxGather *mainDat, float center[eMaxPt])
 {

@@ -12,10 +12,10 @@
 #include <mmsystem.h>
 #include <stdio.h>
 #include <tchar.h>
-#include <D3D8.h>
+#include <d3d8.h>
 #include "D3DApp.h"
-#include "D3DUtil.h"
-#include "DXUtil.h"
+#include "D3DUTIL.H"
+#include "DXUTIL.H"
 #include "D3DRes.h"
 
 

@@ -12,7 +12,7 @@ Bound::~Bound()
 
 void Bound::_CollBrush(const D3DXVECTOR3 & mins,
 					   const D3DXVECTOR3 & maxs,
-		D3DXVECTOR3 & pt, D3DXVECTOR3 & vel, gfxTrace *pTrace)
+		const D3DXVECTOR3 & pt, const D3DXVECTOR3 & vel, gfxTrace *pTrace)
 {
 	int txtInd = -1;
 
@@ -143,7 +143,7 @@ void Bound::_CollBrush(const D3DXVECTOR3 & mins,
 //hit a minimum value.
 //NOTE: you can set qbsp to 0 to force box collision
 bool Bound::BoundCollide(hQBSP qbsp, const D3DXVECTOR3 & thisPt, const Bound & otherBound,
-		D3DXVECTOR3 & pt, D3DXVECTOR3 & vel, gfxTrace *pTrace,
+		const D3DXVECTOR3 & pt, const D3DXVECTOR3 & vel, gfxTrace *pTrace,
 		float testT)
 {
 	D3DXVECTOR3 minOfs = thisPt + m_min + otherBound.m_min;
@@ -151,16 +151,18 @@ bool Bound::BoundCollide(hQBSP qbsp, const D3DXVECTOR3 & thisPt, const Bound & o
 
 	float t, norm[eMaxPt];
 
+	D3DXVECTOR3 ptTmp = pt, velTmp = vel;
+
 	if(BoundGetModelInd() != -1 && qbsp)
 	{
 		QBSPModelCollision(qbsp, BoundGetModelInd(), 
 				  (float*)otherBound.BoundGetMin(), 
 				  (float*)otherBound.BoundGetMax(),
-				  (float*)pt,
-				  (float*)(pt+vel), 
+				  (float*)ptTmp,
+				  (float*)(ptTmp+velTmp), 
 				  pTrace, testT);
 	}
-	else if(m_tPlanes && GFXIntersectBox((float*)pt, (float*)vel, (float*)minOfs, (float*)maxOfs, &t, norm))//&& t < 1)
+	else if(m_tPlanes && GFXIntersectBox((float*)ptTmp, (float*)velTmp, (float*)minOfs, (float*)maxOfs, &t, norm))//&& t < 1)
 	{
 		_CollBrush(otherBound.m_min, otherBound.m_max, pt, vel, pTrace);
 	}
@@ -186,7 +188,7 @@ bool Bound::BoundCollide(hQBSP qbsp, const D3DXVECTOR3 & thisPt, const Bound & o
 
 bool Bound::BoundCollide(hQBSP qbsp, const D3DXVECTOR3 & thisPt,
 						 D3DXVECTOR3 & mins, D3DXVECTOR3 & maxs,
-						 D3DXVECTOR3 & pt, D3DXVECTOR3 & vel, 
+						 const D3DXVECTOR3 & pt, const D3DXVECTOR3 & vel, 
 						 gfxTrace *pTrace, float testT)
 {
 	D3DXVECTOR3 minOfs = thisPt + m_min + mins;
@@ -194,16 +196,18 @@ bool Bound::BoundCollide(hQBSP qbsp, const D3DXVECTOR3 & thisPt,
 
 	float t, norm[eMaxPt];
 
+	D3DXVECTOR3 ptTmp = pt, velTmp = vel;
+
 	if(BoundGetModelInd() != -1 && qbsp)
 	{
 		QBSPModelCollision(qbsp, BoundGetModelInd(), 
 				  (float*)mins, 
 				  (float*)maxs,
-				  (float*)pt,
-				  (float*)(pt+vel), 
+				  (float*)ptTmp,
+				  (float*)(ptTmp+velTmp), 
 				  pTrace, testT);
 	}
-	else if(m_tPlanes && GFXIntersectBox((float*)pt, (float*)vel, (float*)minOfs, (float*)maxOfs, &t, norm) && t < 1)
+	else if(m_tPlanes && GFXIntersectBox((float*)ptTmp, (float*)velTmp, (float*)minOfs, (float*)maxOfs, &t, norm) && t < 1)
 	{
 		_CollBrush(mins, maxs, pt, vel, pTrace);
 	}

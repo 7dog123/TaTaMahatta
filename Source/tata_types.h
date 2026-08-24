@@ -1,27 +1,27 @@
 #ifndef _tata_types_h
 #define _tata_types_h
 
-#include "common.h"
+#include "COMMON.H"
 
 //other STL stuff
 #include <queue>
 
-#include "mywin.h"
+#include "MYWIN.H"
 
 #include <time.h>
 
-#include "graphicsX\gdiX.h"
-#include "graphicsX\gdix_particlefx.h"
-#include "graphicsX\gdix_bkgrndfx.h"
-#include "Parser\parser.h"
+#include "graphicsX/gdiX.h"
+#include "graphicsX/gdiX_particleFX.h"
+#include "graphicsX/gdiX_bkgrndFX.h"
+#include "Parser/PARSER.H"
 
-#include "ScriptTease\script.h"
-#include "ScriptTease\cfg.h"
+#include "ScriptTease/SCRIPT.H"
+#include "ScriptTease/CFG.H"
 
-#include "inputx\inputx.h"
-#include "timer\timer.h"
+#include "InputX/inputX.h"
+#include "TIMER/TIMER.H"
 
-#include "bass.h"
+#include "BASS.H"
 
 //disable these stupid warnings!
 #pragma warning ( disable : 4355 ) //'this' : used in base member initializer list

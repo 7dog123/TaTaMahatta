@@ -19,7 +19,7 @@ DWORD	g_titleClr=0xffffffff;
 hFNT	g_descFnt=0;
 DWORD	g_descClr=0xffffffff;
 
-hTXT	g_bkImg=0;
+static hTXT	g_bkImg=0;
 
 /////////////////////////////
 //these are in terms of pixel

@@ -1,5 +1,5 @@
-#include "gdix.h"
-#include "gdix_i.h"
+#include "gdiX.h"
+#include "GDIX_I.H"
 
 D3DXMATRIX	g_idenMtx(1, 0, 0, 0,
 					  0, 1, 0, 0,

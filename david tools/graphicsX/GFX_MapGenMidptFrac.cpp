@@ -1,5 +1,5 @@
-#include "gdix.h"
-#include "gdix_i.h"
+#include "gdiX.h"
+#include "GDIX_I.H"
 
 #define HEIGHTITER		.5f
 #define MIDDLEHEIGHT	.25f

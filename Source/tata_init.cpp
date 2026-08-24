@@ -1,6 +1,6 @@
 #include "tata_main.h"
 
-#include "resource.h"
+#include "RESOURCE.H"
 
 #include "tata_globals.h"
 
@@ -150,7 +150,8 @@ PUBLIC RETCODE TataInit(const char *configFile, HWND *hwnd, HINSTANCE hinst)
 
 		////////////////////////////////////////////////////
 		//load audio
-		int isAudio = CfgGetItemInt(cfg, "audio", "enable");
+		int isAudio;
+		isAudio = CfgGetItemInt(cfg, "audio", "enable");
 
 		//set 3d algo
 /*		BASS_Set3DAlgorithm(

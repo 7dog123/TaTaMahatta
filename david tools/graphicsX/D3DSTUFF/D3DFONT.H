@@ -8,7 +8,7 @@
 #ifndef D3DFONT_H
 #define D3DFONT_H
 #include <tchar.h>
-#include <D3D9.h>
+#include <d3d9.h>
 
 
 // Font creation flags

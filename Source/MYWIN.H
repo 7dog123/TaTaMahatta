@@ -32,7 +32,7 @@ includes
 #include <math.h>
 #include <commdlg.h>
 #include <time.h>*/
-#include "common.h" 
+#include "COMMON.H" 
 #include <commdlg.h>
 
 #define NOTHINGATALL 0

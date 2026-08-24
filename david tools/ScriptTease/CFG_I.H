@@ -1,9 +1,9 @@
 #ifndef _cfg_i_h
 #define _cfg_i_h
 
-#include "cfg.h"
+#include "CFG.H"
 
-#include "..\Parser\parser.h"
+#include "../Parser/PARSER.H"
 
 typedef struct _CfgItem {
 	string		name;		//name of item

@@ -1,4 +1,4 @@
-#include "timer.h"
+#include "TIMER.H"
 
 DWORD g_timer = 0;
 

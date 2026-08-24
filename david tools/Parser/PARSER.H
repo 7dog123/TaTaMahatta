@@ -1,7 +1,7 @@
 #ifndef _parser_h
 #define _parser_h
 
-#include "..\common.h"
+#include "../COMMON.H"
 
 typedef enum {
 	RETCODE_ENDREACHED = 2,

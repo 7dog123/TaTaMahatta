@@ -12,8 +12,8 @@
 #include <windows.h>
 #include <windowsx.h>
 #include <ddraw.h>
-#include "ddutil.h"
-#include "dxutil.h"
+#include "DDUTIL.H"
+#include "DXUTIL.H"
 
 
 

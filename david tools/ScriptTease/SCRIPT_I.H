@@ -3,9 +3,9 @@
 
 #pragma warning ( disable : 4786 )
 
-#include "script.h"
+#include "SCRIPT.H"
 
-#include "..\Parser\parser.h"
+#include "../Parser/PARSER.H"
 
 #define SCRIPT_MALLOC(s) calloc(1, (s))//malloc((s))
 #define SCRIPT_FREE(data) free((data))

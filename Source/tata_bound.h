@@ -25,12 +25,12 @@ public:
 	//hit a minimum value.
 	//NOTE: you can set qbsp to 0 to force box collision
 	bool BoundCollide(hQBSP qbsp, const D3DXVECTOR3 & thisPt, const Bound & otherBound,
-			D3DXVECTOR3 & pt, D3DXVECTOR3 & vel, gfxTrace *pTrace,
+			const D3DXVECTOR3 & pt, const D3DXVECTOR3 & vel, gfxTrace *pTrace,
 			float testT = 1);
 
 	bool BoundCollide(hQBSP qbsp, const D3DXVECTOR3 & thisPt,
 						 D3DXVECTOR3 & mins, D3DXVECTOR3 & maxs,
-						 D3DXVECTOR3 & pt, D3DXVECTOR3 & vel, 
+						 const D3DXVECTOR3 & pt, const D3DXVECTOR3 & vel, 
 						 gfxTrace *pTrace, float testT = 1);
 
 	//this will only check if sphere intersects
@@ -75,7 +75,7 @@ private:
 	int			m_modelInd;
 
 	void _CollBrush(const D3DXVECTOR3 & mins, const D3DXVECTOR3 & maxs,
-		D3DXVECTOR3 & pt, D3DXVECTOR3 & vel, gfxTrace *pTrace);
+		const D3DXVECTOR3 & pt, const D3DXVECTOR3 & vel, gfxTrace *pTrace);
 };
 
 #endif

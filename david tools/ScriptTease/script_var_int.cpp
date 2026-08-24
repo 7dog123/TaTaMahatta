@@ -1,5 +1,5 @@
-#include "script.h"
-#include "script_i.h"
+#include "SCRIPT.H"
+#include "SCRIPT_I.H"
 
 #include "script_basics.h"
 

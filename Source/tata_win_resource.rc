@@ -1,13 +1,13 @@
 //Microsoft Developer Studio generated resource script.
 //
-#include "resource.h"
+#include "RESOURCE.H"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
 // Generated from the TEXTINCLUDE 2 resource.
 //
-#include "afxres.h"
+#include <winres.h>
 
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
@@ -112,7 +112,7 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_TATAICON            ICON    DISCARDABLE     "tataicon.ico"
+IDI_TATAICON            ICON    DISCARDABLE     "TATAICON.ICO"
 #endif    // English (U.S.) resources
 /////////////////////////////////////////////////////////////////////////////
 
