@@ -112,7 +112,7 @@ RETCODE World::EntityLoad_Enemy(hQBSP qbsp, const EntityParse & entityDat)
 		else
 		{
 			char buff[MAXCHARBUFF]={0};
-			sprintf(buff, "enemy_%d_%d", pNewCre->GetID().ID, pNewCre->GetID().counter);
+			sprintf(buff, "enemy_%d_%d", (int)pNewCre->GetID().ID, (int)pNewCre->GetID().counter);
 			pNewCre->SetName(buff);
 		}
 

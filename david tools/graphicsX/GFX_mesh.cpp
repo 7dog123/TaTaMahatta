@@ -883,13 +883,13 @@ PRIVATE void _MDLFXGetItem(hMDL mdl, const char *filename,
 		//determine what the item is
 		if(stricmp(buff, "render") == 0)
 		{
-			sscanf(oneItemWalker, "%d=%d", &state, &val);
+			sscanf(oneItemWalker, "%d=%d", (int *)&state, (int *)&val);
 
 			MDLFXAddRenderState(mdl, grpInd, state, val);
 		}
 		else if(stricmp(buff, "texture") == 0)
 		{
-			sscanf(oneItemWalker, "%d_%d=%d", &stage, &state, &val);
+			sscanf(oneItemWalker, "%d_%d=%d", (int *)&stage, (int *)&state, (int *)&val);
 
 			MDLFXAddTextureState(mdl, grpInd, stage, state, val);
 		}
@@ -897,7 +897,7 @@ PRIVATE void _MDLFXGetItem(hMDL mdl, const char *filename,
 		{
 			char *buffWalker = oneItemWalker;
 
-			sscanf(oneItemWalker, "%d=", &stage);
+			sscanf(oneItemWalker, "%d=", (int *)&stage);
 
 			char imgPath[MAXCHARBUFF];
 
@@ -927,7 +927,7 @@ PRIVATE void _MDLFXGetItem(hMDL mdl, const char *filename,
 			float spdS,spdT,accS,accT,minS,minT,maxS,maxT;
 
 			sscanf(oneItemWalker, "%d_%c=(%f,%f,%f,%f,%f,%f,%f,%f)",
-				&stage, &animType, &spdS,&spdT,&accS,&accT,&minS,&minT,&maxS,&maxT);
+				(int *)&stage, &animType, &spdS,&spdT,&accS,&accT,&minS,&minT,&maxS,&maxT);
 
 			switch(animType)
 			{

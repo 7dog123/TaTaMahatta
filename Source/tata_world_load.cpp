@@ -416,7 +416,7 @@ RETCODE World::EntityLoad_CommonObject(hQBSP qbsp, const EntityParse & entityDat
 	else
 	{
 		char buff[MAXCHARBUFF]={0};
-		sprintf(buff, "obj_%d_%d", pObj->GetID().ID, pObj->GetID().counter);
+		sprintf(buff, "obj_%d_%d", (int)pObj->GetID().ID, (int)pObj->GetID().counter);
 		pObj->SetName(buff);
 	}
 

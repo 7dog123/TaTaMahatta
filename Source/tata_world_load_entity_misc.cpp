@@ -399,11 +399,11 @@ RETCODE World::EntityLoad_Lightning(hQBSP qbsp, const EntityParse & entityDat)
 
 	pStr = entityDat.GetVal("FXMaxParticle");
 	if(pStr)
-		sscanf(pStr, "%d", &tFX.maxParticle);
+		sscanf(pStr, "%d", (int *)&tFX.maxParticle);
 
 	pStr = entityDat.GetVal("FXMaxPoint");
 	if(pStr)
-		sscanf(pStr, "%d", &tFX.maxPoint);
+		sscanf(pStr, "%d", (int *)&tFX.maxPoint);
 
 	pStr = entityDat.GetVal("FXDelayON");
 	if(pStr)

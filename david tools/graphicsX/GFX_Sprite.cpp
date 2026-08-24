@@ -106,7 +106,7 @@ PUBLIC hSPRITE SpriteLoad(hTXT txt, int numImageCol,
 	{ ASSERT_MSG(0, "Unable to open sprite file", "Error in SpriteLoad"); return 0; }
 
 	//get the frame size
-	fscanf(theFile, "framesize x=%d y=%d\n", &frameSize.cx, &frameSize.cy);
+	fscanf(theFile, "framesize x=%d y=%d\n", (int *)&frameSize.cx, (int *)&frameSize.cy);
 
 	//get the animation delay
 	fscanf(theFile, "aniDelay=%d\n", &delay);
